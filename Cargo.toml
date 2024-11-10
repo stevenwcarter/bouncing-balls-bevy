@@ -1,5 +1,5 @@
 [package]
-name = "balls-bevy"
+name = "sand-sim"
 version = "0.1.0"
 edition = "2021"
 
@@ -16,11 +16,10 @@ linker = "clang"
 rustflags = ["-C", "link-arg=-fuse-ld=/usr/bin/mold"]
 
 [dependencies]
-bevy = { version = "0.14.2", features = ["dynamic_linking"] }
+bevy = "0.14.2"
 bevy_hanabi = "0.12.2"
 bevy_rapier2d = { version = "0.27.0", features = [
   "debug-render-2d",
   "simd-stable",
 ] }
-lyon = "1.0.1"
 rand = "0.8.5"
